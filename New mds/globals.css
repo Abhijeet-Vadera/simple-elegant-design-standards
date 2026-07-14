@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+/* ============================================================
+   FOCUS REVOLUTION — DESIGN TOKENS
+   This file is the single source of truth for all visual tokens.
+   When the design evolves, update here first, then nowhere else.
+   ============================================================ */
+
+@theme {
+  /* Fonts */
+  --font-sans: "Lexend", system-ui, sans-serif;
+
+  /* --- Colour palette --- */
+
+  /* Orange — energy, momentum, CTAs, live indicators, celebration */
+  --color-fr-orange:       #ED7309;
+  --color-fr-orange-dark:  #C25A05;
+  --color-fr-orange-dim:   #82400C;
+  --color-fr-orange-glow:  rgba(237, 115, 9, 0.22);
+
+  /* Purple — depth, trust, body text, supporting UI */
+  --color-fr-ink:          #312353;   /* primary text, light mode */
+  --color-fr-purple-mid:   #8A72CC;   /* secondary text, soft labels */
+  --color-fr-purple-light: #A99AD0;   /* placeholders, hints */
+  --color-fr-purple-blue:  #5A6BCC;   /* gradient start (avatar/progress) */
+  --color-fr-lavender:     #AC8EFF;   /* lavender avatar gradient */
+
+  /* Surfaces */
+  --color-fr-surface-light: #F6F3FC;  /* soft chip/badge background, light mode */
+  --color-fr-pale:          #F0EBFB;  /* icon tile background, pale tint */
+  --color-fr-track:         #EDE7F7;  /* progress bar track, light mode */
+  --color-fr-surface-dark:  #1A1A1D;  /* card background, dark mode */
+  --color-fr-bg-dark:       #14101F;  /* page background, dark mode */
+  --color-fr-bg-dark-grad:  #221A38;  /* hero/timer gradient start, dark mode */
+
+  /* Semantic */
+  --color-fr-error:  #E5484D;  /* form validation errors ONLY */
+
+  /* --- Border radius --- */
+  --radius-btn:     14px;   /* standard buttons */
+  --radius-btn-pill: 999px; /* pill buttons */
+  --radius-card-sm: 18px;   /* stat cards */
+  --radius-card-md: 20px;   /* gamification cards */
+  --radius-card-lg: 24px;   /* feature/entry cards */
+  --radius-modal:   26px;   /* modals */
+  --radius-input:   15px;   /* input fields */
+  --radius-tile:    15px;   /* icon tiles */
+  --radius-badge:   6px;    /* square badges */
+  --radius-chip:    12px;   /* chips */
+}
+
+/* ============================================================
+   KEYFRAME ANIMATIONS
+   Define named keyframes here; reference via Tailwind utilities.
+   ============================================================ */
+
+@keyframes fr-pulse {
+  0%   { box-shadow: 0 0 0 0    rgba(237, 115, 9, 0.5); }
+  70%  { box-shadow: 0 0 0 7px  rgba(237, 115, 9, 0);   }
+  100% { box-shadow: 0 0 0 0    rgba(237, 115, 9, 0);   }
+}
+
+/* ============================================================
+   GRADIENTS
+   Named gradient utilities — add new ones here as the design grows.
+   ============================================================ */
+
+.gradient-orange-cta    { background: linear-gradient(140deg, #ED7309, #C25A05); }
+.gradient-orange-avatar { background: linear-gradient(140deg, #ED7309, #82400C); }
+.gradient-purple-blue   { background: linear-gradient(140deg, #5A6BCC, #8A72CC); }
+.gradient-progress      { background: linear-gradient(90deg,  #8A72CC, #ED7309); }
+.gradient-dark-timer    { background: linear-gradient(160deg, #221A38, #14101F); }
+.gradient-blue-avatar   { background: linear-gradient(140deg, #7186FF, #3E4A8C); }
+.gradient-pink-avatar   { background: linear-gradient(140deg, #FE7587, #8C4049); }
+.gradient-lavender-avatar { background: linear-gradient(140deg, #AC8EFF, #5F4E8C); }
+
+/* ============================================================
+   SHADOWS
+   Named shadow utilities — copy these exactly, they encode
+   the brand's depth language.
+   ============================================================ */
+
+.shadow-cta      { box-shadow: 0 1px 2px rgba(49,35,83,.14), 0 8px 22px -8px rgba(237,115,9,.65), 0 0 20px rgba(237,115,9,.22); }
+.shadow-cta-hover{ box-shadow: 0 2px 5px rgba(49,35,83,.16), 0 14px 30px -8px rgba(237,115,9,.8), 0 0 26px rgba(237,115,9,.3); }
+.shadow-card-feature { box-shadow: 0 1px 2px rgba(49,35,83,.06), 0 18px 50px -24px rgba(49,35,83,.35); }
+.shadow-card-stat    { box-shadow: 0 1px 2px rgba(49,35,83,.05), 0 6px 18px -12px rgba(49,35,83,.2); }
+.shadow-icon-tile    { box-shadow: 0 8px 18px -8px rgba(237,115,9,.5); }
+.shadow-progress-fill{ box-shadow: 0 0 14px rgba(237,115,9,.4); }
+
+/* ============================================================
+   BASE RESETS
+   ============================================================ */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
