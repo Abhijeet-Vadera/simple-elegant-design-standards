@@ -27,12 +27,12 @@ Do not hallucinate novel styling tokens.
 - **Primary Rule**: `Inter` or `Lexend` exclusively. Monospace fonts are forbidden.
 - **Headings**: Use `tracking-tight` and `font-semibold` or `font-bold`.
 - **Supertext vs. Subtext**: Contrast drives hierarchy. Supertext is Ink; Subtext is Gray-500.
-- **Mathematical Precision**: Spacing must be multiples of 4 or 8 (`p-4`, `p-6`, `gap-2`). Never use arbitrary spacing (e.g., `p-[17px]`).
-- **Enterprise Density (CRITICAL)**: SaaS platforms require HIGH information density. Do NOT use airy, consumer-style spacing.
-  - Use `gap-4` or `gap-6` between major page sections, never `gap-12` or `gap-16`.
-  - Use `gap-1` or `gap-2` between closely related items (like a metric and its label).
-  - Use `p-4` or `p-5` for card padding, not `p-8`.
-  - Avoid excessive margins (e.g., `mb-8`). Keep the UI compact and dense.
+- **Mathematical Precision**: Spacing must be multiples of 4 or 8. Never use arbitrary spacing.
+- **Enterprise Density (CRITICAL)**: SaaS platforms require HIGH information density. The UI must be extremely compact.
+  - **Major Sections**: Use `gap-4` between sections. NEVER use `gap-8`, `gap-12`, `mb-8`, or `py-12`.
+  - **Cards & Internal Spacing**: Use `p-4` for card padding. Use `gap-1` or `gap-2` for internal items.
+  - **BANNED**: Never use `justify-between` vertically inside cards if it creates massive empty gaps between the title and the subtext. Elements must stack tightly with `flex-col gap-1` or `gap-2`.
+  - **BANNED**: Never use forced heights (e.g., `h-64`) that cause content to float. Let the dense content dictate the height.
 
 ## Layout & Components
 - **Shadcn/ui**: Use Shadcn components as the base for ALL UI primitives. Do not rebuild them from scratch. Extend via `className` + `cn()` only. Never edit files in `src/components/ui/` directly.
