@@ -1,0 +1,26 @@
+{
+  "variants": {
+    "screenVariants": { "hidden": { "opacity": 0, "y": 8 }, "show": { "opacity": 1, "y": 0, "transitionRef": "EASE_OUT" } },
+    "fadeUp": { "hidden": { "opacity": 0, "y": 10 }, "show": { "opacity": 1, "y": 0, "transitionRef": "EASE_OUT" } },
+    "staggerContainer": { "show": { "staggerChildren": 0.055, "delayChildren": 0.04 } },
+    "staggerItem": { "hidden": { "opacity": 0, "y": 10 }, "show": { "opacity": 1, "y": 0, "transitionRef": "EASE_FAST" } },
+    "overlayVariants": { "hidden": { "opacity": 0 }, "show": { "opacity": 1, "duration": 0.22, "ease": [0.32, 0.72, 0, 1] }, "exit": { "opacity": 0, "duration": 0.18 } },
+    "modalVariants": { "hidden": { "opacity": 0, "y": 10, "scale": 0.984 }, "show": { "opacity": 1, "y": 0, "scale": 1, "duration": 0.28 }, "exit": { "opacity": 0, "y": 6, "scale": 0.99, "duration": 0.2 } },
+    "dropdownVariants": { "hidden": { "opacity": 0, "y": -6, "scale": 0.97 }, "show": { "opacity": 1, "y": 0, "scale": 1, "duration": 0.22 }, "exit": { "opacity": 0, "y": -4, "scale": 0.98, "duration": 0.15 } },
+    "dropdownContainer": { "show": { "staggerChildren": 0.035, "delayChildren": 0.05 } },
+    "dropdownItem": { "hidden": { "opacity": 0, "x": -6 }, "show": { "opacity": 1, "x": 0, "duration": 0.24 }, "exit": { "opacity": 0, "x": -4, "duration": 0.12 } },
+    "toastVariants": { "hidden": { "opacity": 0, "y": 18, "scale": 0.94 }, "show": { "opacity": 1, "y": 0, "scale": 1, "duration": 0.34 }, "exit": { "opacity": 0, "y": 10, "scale": 0.97, "duration": 0.22 } },
+    "orgCardVariants": { "hidden": { "opacity": 0, "y": 14, "scale": 0.972, "filter": "blur(3px)" }, "show": { "opacity": 1, "y": 0, "scale": 1, "filter": "blur(0px)", "duration": 0.52 }, "exit": { "opacity": 0, "y": -6, "scale": 0.99, "filter": "blur(2px)", "duration": 0.22 } },
+    "orgLogoVariants": { "hidden": { "opacity": 0, "scale": 0.6 }, "show": { "opacity": 1, "scale": 1, "springRef": "logoPopIn" } },
+    "orgBarVariants": { "hidden": { "scaleY": 0 }, "show": { "scaleY": 1, "duration": 0.45, "delay": 0.05 } },
+    "orgTextContainer": { "show": { "staggerChildren": 0.065, "delayChildren": 0.15 } },
+    "orgTextRow": { "hidden": { "opacity": 0, "x": 14 }, "show": { "opacity": 1, "x": 0, "duration": 0.4 } },
+    "slideInRight": { "hidden": { "opacity": 0, "x": 20 }, "show": { "opacity": 1, "x": 0, "transitionRef": "EASE_FAST" }, "exit": { "opacity": 0, "x": -12, "duration": 0.18 } },
+    "fadeVariants": { "hidden": { "opacity": 0 }, "show": { "opacity": 1, "duration": 0.28 }, "exit": { "opacity": 0, "duration": 0.18 } },
+    "progressBarVariants": { "hidden": { "scaleX": 0 }, "show": { "scaleX": 1, "duration": 0.6 } }
+  },
+  "cssKeyframes": {
+    "gl-fade-out": { "location": "src/components/loader/GlobalLoader.css", "duration": "0.4s", "easing": "ease-out", "property": "opacity" },
+    "publicSubmitSpin": { "location": "src/features/public/container/PublicSubmitScreen.module.css", "duration": "0.8s", "easing": "linear", "iteration": "infinite", "note": "distinct from Tailwind's default 1s animate-spin, scoped to the public submission flow only" }
+  }
+}

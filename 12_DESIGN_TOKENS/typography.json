@@ -1,0 +1,28 @@
+{
+  "families": {
+    "sans": { "stack": ["Inter", "-apple-system", "BlinkMacSystemFont", "'Segoe UI'", "sans-serif"], "role": "UI/language text" },
+    "mono": { "stack": ["'JetBrains Mono'", "ui-monospace", "'SF Mono'", "Menlo", "monospace"], "role": "IDs, counts, timestamps, eyebrow labels" }
+  },
+  "weights": { "inter": [400, 450, 500, 600, 700], "jetbrainsMono": [400, 500] },
+  "fontFeatureSettings": "\"cv11\", \"ss01\"",
+  "scale": {
+    "pageTitle":        { "size": 30,   "weight": 600, "letterSpacing": "-0.02em",  "lineHeight": 1.12 },
+    "emptyStateTitle":  { "size": 17,   "weight": 600, "letterSpacing": "-0.012em" },
+    "sectionCardTitle": { "size": 13.5, "weight": 600, "letterSpacing": "-0.008em" },
+    "statCardValue":    { "size": 28,   "weight": 600, "letterSpacing": "-0.03em",  "lineHeight": 1 },
+    "body":             { "size": 13.5, "weight": 400 },
+    "bodySecondary":    { "size": 13,   "weight": 400, "lineHeight": 1.5 },
+    "label":            { "size": 12.5, "weight": 500, "letterSpacing": "-0.005em" },
+    "caption":          { "size": 12,   "weight": 400 },
+    "badgeText":        { "size": 11.5, "weight": 500 },
+    "badgeTextMono":    { "size": 10.5 },
+    "eyebrow":          { "size": 11,   "weight": 450, "letterSpacing": "0.14em", "transform": "uppercase", "color": "#9CA3AF", "family": "mono" },
+    "monoCustom":       { "size": 11.5, "weight": 450, "letterSpacing": "0.02em", "family": "mono" },
+    "ideaRef":          { "size": 10.5, "family": "mono", "color": "#9CA3AF" },
+    "tabLabel":         { "size": 13.5, "weightInactive": 450, "weightActive": 500, "letterSpacing": "-0.006em" }
+  },
+  "rules": {
+    "monoNeverForProse": true,
+    "trackingConvention": "negative tracking on headings/numerals, positive tracking only on uppercase mono labels"
+  }
+}

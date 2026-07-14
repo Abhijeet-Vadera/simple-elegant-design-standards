@@ -1,0 +1,20 @@
+{
+  "baseUnit": 4,
+  "scaleSource": "unmodified Tailwind default spacing scale (no custom override in tailwind.config.js)",
+  "mostFrequentSteps": [
+    { "token": "0.5", "px": 2 }, { "token": "1", "px": 4 }, { "token": "1.5", "px": 6 },
+    { "token": "2", "px": 8 }, { "token": "2.5", "px": 10 }, { "token": "3", "px": 12 },
+    { "token": "4", "px": 16 }, { "token": "5", "px": 20 }, { "token": "6", "px": 24 },
+    { "token": "7", "px": 28 }, { "token": "8", "px": 32 }
+  ],
+  "componentSpecific": {
+    "listRowPadding": "13px 18px",
+    "cardHeaderPadding": "14px 18px 12px",
+    "cardBodyPaddingLoose": "18px 20px",
+    "modalOverlayPadding": "32px",
+    "emptyStatePadding": "56px 24px",
+    "pageHeaderMarginBottom": "28px",
+    "controlGapSmall": "6-8px",
+    "controlGapMedium": "10-14px"
+  }
+}

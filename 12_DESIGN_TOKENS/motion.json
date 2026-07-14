@@ -1,0 +1,18 @@
+{
+  "library": "framer-motion",
+  "canonicalSource": "src/shared/lib/animations.ts",
+  "doNotImportFrom": "src/lib/animations.ts (legacy, drifted — e.g. modal duration 0.42s vs canonical 0.28s)",
+  "signatureEasing": "cubic-bezier(0.16, 1, 0.3, 1)",
+  "secondaryEasing": "cubic-bezier(0.32, 0.72, 0, 1)",
+  "springs": {
+    "default": { "type": "spring", "stiffness": 420, "damping": 32 },
+    "logoPopIn": { "type": "spring", "stiffness": 480, "damping": 22, "delay": 0.08 },
+    "drawerSlide": { "type": "spring", "stiffness": 300, "damping": 30 }
+  },
+  "namedConstants": {
+    "EASE_OUT": { "ease": [0.16, 1, 0.3, 1], "duration": 0.5 },
+    "EASE_FAST": { "ease": [0.16, 1, 0.3, 1], "duration": 0.32 }
+  },
+  "durationRange": { "min": 0.12, "max": 0.6, "unit": "seconds" },
+  "reducedMotion": "CSS transitions/animations auto-disabled via prefers-reduced-motion in src/index.css; Framer Motion variants are NOT auto-gated (documented gap — new Framer usage should branch on useReducedMotion())"
+}

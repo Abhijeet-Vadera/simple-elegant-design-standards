@@ -1,0 +1,14 @@
+{
+  "canonicalFile": "src/shared/components/layout/Shell.tsx",
+  "sidebarWidth": "248px",
+  "topbarHeight": "64px",
+  "gridTemplate": "grid-cols-[248px_1fr] min-h-screen h-screen overflow-hidden",
+  "regions": {
+    "sidebar": { "width": 248, "background": "#0A0A0A", "scroll": "flex flex-col h-screen, internal scroll for nav groups" },
+    "topbar": { "height": 64, "content": "breadcrumbs OR title/subtitle, right-aligned search + actions + notification bell" },
+    "contentOutlet": { "scroll": "independent scroll region below topbar, animated per-route via screenVariants" }
+  },
+  "responsive": "none — fixed pixel dimensions, no breakpoint-driven collapse",
+  "modalOverlayPadding": "32px from viewport edge",
+  "pageHeaderBottomMargin": "28px"
+}

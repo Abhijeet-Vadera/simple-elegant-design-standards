@@ -1,0 +1,46 @@
+{
+  "ink": "#0A0A0A",
+  "inkHover": "#262626",
+  "canvas": "#F7F7F5",
+  "surface": "#FFFFFF",
+  "sidebar": "#0A0A0A",
+  "sidebar2": "#161616",
+  "sidebarHover": "#1C1C1C",
+  "text": {
+    "primary": "#0A0A0A",
+    "secondary": "#6B7280",
+    "tertiary": "#9CA3AF",
+    "darkHeading900": "#111827",
+    "body700": "#374151"
+  },
+  "border": {
+    "default": "#E5E7EB",
+    "strong": "#D1D5DB"
+  },
+  "hoverSurface": "#F3F4F6",
+  "rowHoverTint": "#FAFAF9",
+  "selectionBg": "#111111",
+  "scrollbar": {
+    "thumb": "#E0E0DC",
+    "thumbHover": "#C9C9C4"
+  },
+  "overlayScrim": "rgba(15,15,15,0.48)",
+  "focusRing": "rgba(10,10,10,0.06)",
+  "errorText": "#DC2626",
+  "errorTextAlt": "#EF4444",
+  "avatarDark": { "bg": "#1A1A1A", "text": "#FFFFFF", "border": "rgba(255,255,255,0.1)" },
+  "avatarLight": { "bg": "#EDEDEA", "text": "#0A0A0A", "border": "rgba(0,0,0,0.05)" },
+  "fileTypeGlyph": {
+    "PDF": "#DC2626", "CSV": "#16A34A", "XLSX": "#2563EB", "PPT": "#D97706", "PNG": "#7C3AED", "JPG": "#7C3AED", "fallback": "#6B7280"
+  },
+  "gradients": {
+    "sidebarFade": "linear-gradient(to top, #0A0A0A, #0A0A0A, transparent)",
+    "mentionAvatarPlaceholder": "linear-gradient(135deg, #60A5FA, #818CF8)",
+    "intakeHero": "linear-gradient(135deg, #0A0A0A 0%, #3A3A3A 100%)"
+  },
+  "doNotUse": {
+    "pureBlack": "#000000",
+    "stockPaletteFamilies": ["indigo", "purple", "slate", "sky", "teal", "rose"],
+    "note": "Present in a few legacy/secondary screens as tech debt — not part of the canonical palette."
+  }
+}

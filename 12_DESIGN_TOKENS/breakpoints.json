@@ -1,0 +1,6 @@
+{
+  "customBreakpoints": "none — tailwind.config.js does not override the default screens config",
+  "tailwindDefaults": { "sm": "640px", "md": "768px", "lg": "1024px", "xl": "1280px", "2xl": "1536px" },
+  "actualUsage": "The app shell (Shell.tsx) has no responsive collapse logic at any breakpoint — this is a desktop-only admin dashboard. The public-facing flow (PublicSubmitScreen, PublicBalanceScreen) is the one part of the app with genuine mobile-responsive CSS, isolated in its own CSS Module.",
+  "recommendation": "Do not assume the internal app shell needs responsive behavior unless explicitly requested. If adding responsive rules to the public flow, follow PublicSubmitScreen.module.css's existing breakpoints rather than introducing new ones."
+}

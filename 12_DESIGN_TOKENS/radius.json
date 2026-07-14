@@ -1,0 +1,26 @@
+{
+  "scaleSource": "tailwind.config.js theme.extend.borderRadius",
+  "sm": "8px",
+  "DEFAULT": "12px",
+  "lg": "16px",
+  "xl": "20px",
+  "pill": "999px",
+  "circle": "50%",
+  "componentSpecific": {
+    "checkbox": "5px",
+    "button": "8px",
+    "input": "8px",
+    "dropdownPanel": "10px",
+    "card": "12px",
+    "modalPanel": "16px",
+    "emptyStateIconWell": "14px",
+    "fileGlyph": "8px",
+    "segmentedItem": "7px"
+  },
+  "usageTier": {
+    "controls": "6-8px",
+    "cardsInputsDropdowns": "8-12px",
+    "largeSurfaces": "14-20px",
+    "pillsAvatarsDots": "999px or 50%"
+  }
+}

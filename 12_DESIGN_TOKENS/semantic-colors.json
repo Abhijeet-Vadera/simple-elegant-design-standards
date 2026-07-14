@@ -1,0 +1,19 @@
+{
+  "success": { "border": "#BBF7D0", "bg": "#DCFCE7", "text": "#15803D" },
+  "warning": { "border": "#FDE68A", "bg": "#FEF3C7", "text": "#D97706" },
+  "danger":  { "border": "#FECACA", "bg": "#FEE2E2", "text": "#B91C1C" },
+  "info":    { "border": "#BFDBFE", "bg": "#EFF6FF", "text": "#1D4ED8" },
+  "stagePill": {
+    "submitted":  { "bg": "#F3F4F6", "text": "#6B7280", "border": "#E5E7EB" },
+    "screening":  { "bg": "#FEF3C7", "text": "#D97706", "border": "#FDE68A" },
+    "evaluation": { "bg": "#EFF6FF", "text": "#2563EB", "border": "#BFDBFE" },
+    "pilot":      { "bg": "#F0FDF4", "text": "#16A34A", "border": "#BBF7D0" },
+    "scaled":     { "bg": "#0A0A0A", "text": "#FFFFFF", "border": "#0A0A0A" }
+  },
+  "usageRule": "Every colored status indicator must pair color with a text label or icon — color is never the sole signal.",
+  "fileTypeAlphaConvention": {
+    "backgroundSuffix": "18",
+    "borderSuffix": "28",
+    "note": "Applied as hexColor + suffix, e.g. #DC2626 + '18' = '#DC262618' background."
+  }
+}

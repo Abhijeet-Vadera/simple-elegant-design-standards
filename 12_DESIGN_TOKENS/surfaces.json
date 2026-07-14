@@ -1,0 +1,11 @@
+{
+  "canvas": { "bg": "#F7F7F5", "role": "app background" },
+  "card": { "bg": "#FFFFFF", "border": "#E5E7EB", "radius": 12, "role": "SectionCard, StatCard, general panels" },
+  "input": { "bg": "#FFFFFF", "border": "#E5E7EB", "radius": 8, "height": 40 },
+  "sidebar": { "bg": "#0A0A0A", "role": "fixed dark structural surface, not a theme toggle" },
+  "modalPanel": { "bg": "#FFFFFF", "border": "#E5E7EB", "radius": 16, "shadow": "lg" },
+  "dropdownPanel": { "bg": "#FFFFFF", "border": "#E5E7EB", "radius": 10, "shadow": "md" },
+  "drawerPanel": { "bg": "#FFFFFF", "shadow": "-12px 0 36px rgba(10,10,10,0.12)" },
+  "glassmorphism": { "used": false, "note": "No backdrop-blur/translucent-panel pattern exists anywhere in the codebase — do not introduce it." },
+  "elevationPhilosophy": "Surfaces are distinguished primarily by a hairline border (#E5E7EB) plus a subtle ink-tinted shadow, not by strong color or blur contrast."
+}

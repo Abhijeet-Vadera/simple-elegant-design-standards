@@ -1,0 +1,18 @@
+{
+  "canonicalFile": "src/shared/components/ui/index.tsx",
+  "primitives": ["Avatar", "AvatarStack", "Button", "IconButton", "Badge", "Priority", "Tag", "Field", "Input", "Textarea", "Select", "Toggle", "Checkbox", "Sparkline", "Meter", "Modal", "Drawer", "Menu", "Tabs", "Segmented", "EmptyState", "Spinner", "DataLoader", "FileGlyph", "StagePill", "SectionCard", "IdeaRow", "PageHeader", "StatCard", "ReactSelect", "Pagination"],
+  "reExportedFromBarrel": ["DocumentIcon", "Tooltip", "Dropdown"],
+  "adjacentFiles": ["DatePicker.tsx", "Icons.tsx"],
+  "controlHeights": {
+    "buttonSm": 32, "buttonMd": 38, "buttonLg": 44,
+    "iconButtonSm": 32, "iconButtonMd": 36,
+    "input": 40, "textarea_minHeight": 96,
+    "toggleTrack": { "width": 40, "height": 24 },
+    "checkbox": 18, "badge": 22, "tag": 20
+  },
+  "buttonVariants": ["primary", "secondary", "outline", "ghost", "danger"],
+  "buttonSizes": ["sm", "md", "lg"],
+  "badgeVariants": ["\"\" (default)", "solid", "soft", "success", "warning", "danger", "blue"],
+  "knownDuplicateVariants": { "secondary": "identical styling to outline — documented as-is, do not silently merge or add a 6th variant" },
+  "legacyDoNotUse": "src/components/ui/index.tsx (521 lines, superseded subset of this file)"
+}

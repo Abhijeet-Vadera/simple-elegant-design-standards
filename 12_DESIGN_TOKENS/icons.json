@@ -1,0 +1,19 @@
+{
+  "system": "hand-drawn custom SVG set — no production icon library",
+  "canonicalFile": "src/shared/components/ui/Icons.tsx",
+  "doNotUse": "@phosphor-icons/react — installed but used in exactly one legacy file (src/features/workflow/components/EvaluationFormBuilder.tsx)",
+  "spec": {
+    "viewBox": "0 0 24 24",
+    "fill": "none",
+    "stroke": "currentColor",
+    "strokeWidth": 1.5,
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
+    "defaultSize": 16
+  },
+  "convention": "Feather/Lucide-style stroke icon; factory pattern base = (d, props) => (overrideProps) => <svg .../>",
+  "observedRenderSizes": [10, 11, 12, 13, 14, 15, 16, 17, 18, 22],
+  "mostCommonRenderSizes": [16, 13, 14, 12, 18],
+  "sizeExceptions": { "emptyStateIcon": 22, "note": "the one deliberately larger icon context in the system" },
+  "inventoryApprox": "~40 icons covering nav, actions (plus/check/trash/edit/copy), files (upload/download/link), arrows/chevrons, status (eye/eye-off/warning), domain (award/building/globe/qr/kanban/users/bell)"
+}

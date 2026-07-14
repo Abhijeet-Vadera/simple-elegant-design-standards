@@ -1,0 +1,8 @@
+{
+  "base": 0,
+  "dropdownMenu": 40,
+  "modalOverlay": 100,
+  "drawerOverlay": 100,
+  "reactSelectMenuPortal": 9999,
+  "rule": "There is no formal z-index scale/token file in source — these are the observed literal values in src/shared/components/ui/index.tsx. New floating UI should reuse 40 for inline dropdowns and 100 for full-viewport overlays (modal/drawer) rather than picking an arbitrary new value. react-select's portal target is document.body with z-index 9999 to escape any local stacking context — replicate this exact value if adding another portal-rendered overlay."
+}
