@@ -34,8 +34,10 @@ Do not hallucinate novel styling tokens.
   - **BANNED**: Never use `justify-between` vertically inside cards if it creates massive empty gaps between the title and the subtext. Elements must stack tightly with `flex-col gap-1` or `gap-2`.
   - **BANNED**: Never use forced heights (e.g., `h-64`) that cause content to float. Let the dense content dictate the height.
 
-## Layout & Components
-- **Shadcn/ui**: Use Shadcn components as the base for ALL UI primitives. Do not rebuild them from scratch. Extend via `className` + `cn()` only. Never edit files in `src/components/ui/` directly.
+## Layout & Components (CRITICAL WARNINGS)
+- **Shadcn/ui Overrides**: Shadcn components default to very airy spacing (e.g., `Card` uses `p-6`). You MUST forcefully override these defaults using `className` to achieve Enterprise Density (e.g., `<CardContent className="p-4">`).
+- **Protect globals.css**: NEVER overwrite or delete existing utility classes in `globals.css` (like `.data-label` or animations). If you add new Shadcn variables, append them, do not wipe the file.
+- **Base Components**: Use Shadcn components as the base for ALL UI primitives. Do not rebuild them from scratch. Extend via `className` + `cn()` only. Never edit files in `src/components/ui/` directly.
 - **Tailwind**: Always use `cn()` for conditional classes. Never use inline `style={{}}`.
 
 # STRICT ENGINEERING STANDARDS (The "How")
