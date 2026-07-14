@@ -32,7 +32,11 @@ mkdir -p .github
 cat "$TMP_FILE" > .github/copilot-instructions.md
 echo "✓ Installed for GitHub Copilot (created .github/copilot-instructions.md)"
 
-# 4. General fallback for CLI agents (Claude Code, Antigravity, OpenCode, etc.)
+# 4. Install for Claude Code
+cat "$TMP_FILE" > CLAUDE.md
+echo "✓ Installed for Claude Code (created CLAUDE.md)"
+
+# 5. General fallback for CLI agents (Antigravity, OpenCode, etc.)
 cat "$TMP_FILE" > design-standards-skill.md
 echo "✓ Installed for CLI Agents (created design-standards-skill.md)"
 
